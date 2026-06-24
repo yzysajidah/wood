@@ -1,7 +1,14 @@
-WOODVERSE - E-Modul Simulasi 3D Tanggam Kayu
-
-Cara upload ke GitHub:
-1. Upload semua isi folder ini ke repository GitHub.
-2. Pastikan folder css, js, images, models dan pdf ikut struktur asal.
-3. Aktifkan GitHub Pages: Settings > Pages > Deploy from branch > main > root.
-4. Buka link GitHub Pages dan tekan Ctrl + Shift + R.
+Cara guna:
+1. Copy semua fail .glb ke folder models.
+2. Pastikan nama fail:
+   mortise_step1.glb ... mortise_step4.glb
+   dovetail_step1.glb ... dovetail_step4.glb
+   box_step1.glb ... box_step4.glb
+   lap_step1.glb ... lap_step4.glb
+   miter_step1.glb ... miter_step4.glb
+   tongue_step1.glb ... tongue_step4.glb
+   cross_step1.glb ... cross_step4.glb
+3. Copy PDF ke folder pdf:
+   TANGGAM KAYU.pdf
+   ALATAN TANGAN UNTUK MEMBINA TANGGAM.pdf
+4. Buka folder dalam VS Code > Open with Live Server.
