@@ -1,1 +1,54 @@
-<!doctype html><html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Model 3D | WOODVERSE</title><script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body><nav class="nav"><a class="brand" href="index.html"><span class="logoBox">🪵</span><div><b>WOODVERSE</b><small>E-Modul Simulasi 3D Tanggam Kayu</small></div></a><button class="menuBtn">☰</button><div class="links"><a href="index.html">Utama</a><a class="active" href="model.html">Model 3D</a><a href="nota.html">Nota Pembelajaran</a><a href="kuiz.html">Kuiz Interaktif</a><a href="tips.html">Tips & Fakta</a><a class="btn" href="model.html">Mula Belajar →</a></div></nav><main class="page"><header class="pageHead fade"><h1>Model 3D Tanggam Kayu</h1><p class="lead">Pilih model dan tekan Step 1 hingga Step 4 untuk melihat proses pemasangan tanggam.</p></header><section class="viewerLayout fade"><aside class="side panel"><b>Model Tanggam</b><div id="modelList"></div></aside><div class="viewerCard panel"><div class="viewerTop"><span>Simulasi 3D Interaktif</span><label class="toggle"><input type="checkbox" id="autoRotate" checked> Putar Auto</label></div><model-viewer id="viewer" src="models/mortise_step1.glb" camera-controls auto-rotate shadow-intensity="1" exposure="1" ar></model-viewer><div class="steps"></div><div class="thumbs" id="thumbs"></div></div><article class="infoPanel panel"><h2 id="modelTitle">Mortise & Tenon Joint</h2><p id="modelDesc"></p><div class="infoList"><p><b>Hasil Pembelajaran</b><br><span id="learn"></span></p><p><b>Aplikasi</b><br><span id="apply"></span></p><p><b>Kelebihan</b><br><span id="adv"></span></p></div></article></section></main><footer class="footer"><div class="footerInner"><span>WOODVERSE</span><span>© 2026 WOODVERSE. Hak Cipta Terpelihara.</span></div></footer><script src="js/main.js"></script></body></html>
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Model 3D | WOODVERSE</title>
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">▰</span><span><strong>WOODVERSE</strong><small>E-Modul Simulasi 3D Tanggam Kayu</small></span></a>
+    <nav class="nav-links" id="navLinks"><a href="index.html">Utama</a><a class="active" href="model.html">Model 3D</a><a href="nota.html">Nota Pembelajaran</a><a href="kuiz.html">Kuiz Interaktif</a><a href="tips.html">Tips & Fakta</a></nav><button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <main class="page-wrap">
+    <section class="page-title reveal"><p class="eyebrow">Halaman Model 3D</p><h1>Model 3D Tanggam Kayu</h1><p>Tekan model dan pilih Step 1–4 untuk melihat proses sambungan tanggam.</p></section>
+    <section class="model-layout reveal">
+      <aside class="side-panel">
+        <h3>Model Tanggam</h3>
+        <button class="joint-btn active" data-model="mortise">01 Mortise & Tenon</button>
+        <button class="joint-btn" data-model="dovetail">02 Dovetail Joint</button>
+        <button class="joint-btn" data-model="box">03 Box Joint</button>
+        <button class="joint-btn" data-model="lap">04 Lap Joint</button>
+        <button class="joint-btn" data-model="finger">05 Finger Joint</button>
+        <button class="joint-btn" data-model="miter">06 Mitre Joint</button>
+        <button class="joint-btn" data-model="cross">07 Three-Way Cross Joint</button>
+      </aside>
+      <section class="viewer-card">
+        <div class="viewer-toolbar"><span id="currentStepText">Step 1</span><label><input type="checkbox" id="autoRotateToggle" checked> Putar Auto</label></div>
+        <model-viewer id="mainViewer" src="models/mortise_step1.glb" camera-controls auto-rotate shadow-intensity="1" exposure="1" ar></model-viewer>
+        <div class="step-row">
+          <button class="step-btn active" data-step="1">Step 1</button>
+          <button class="step-btn" data-step="2">Step 2</button>
+          <button class="step-btn" data-step="3">Step 3</button>
+          <button class="step-btn" data-step="4">Step 4</button>
+        </div>
+      </section>
+      <aside class="info-panel">
+        <h2 id="jointTitle">Mortise & Tenon Joint</h2>
+        <p id="jointDesc">Sambungan lidah dan lubang yang kuat dan stabil, sesuai untuk struktur rangka dan perabot tahan lama.</p>
+        <div class="info-block"><h3>Hasil Pembelajaran</h3><p id="jointOutcome">Memahami struktur lidah dan lubang serta fungsinya.</p></div>
+        <div class="info-block"><h3>Aplikasi</h3><p id="jointApp">Perabot, rangka pintu, tingkap dan struktur binaan.</p></div>
+        <div class="info-block"><h3>Kelebihan</h3><p id="jointAdv">Kukuh, stabil dan tahan lama.</p></div>
+      </aside>
+    </section>
+  </main>
+  <footer class="footer"><div><strong>WOODVERSE</strong><p>E-Modul Simulasi 3D Tanggam Kayu</p></div><p>Fakulti Teknikal & Vokasional<br>Universiti Pendidikan Sultan Idris</p><p>© 2026 WOODVERSE.</p></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

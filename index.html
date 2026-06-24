@@ -1,1 +1,100 @@
-<!doctype html><html lang="ms"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>WOODVERSE | E-Modul Simulasi 3D Tanggam Kayu</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body><nav class="nav"><a class="brand" href="index.html"><span class="logoBox">🪵</span><div><b>WOODVERSE</b><small>E-Modul Simulasi 3D Tanggam Kayu</small></div></a><button class="menuBtn">☰</button><div class="links"><a class="active" href="index.html">Utama</a><a href="model.html">Model 3D</a><a href="nota.html">Nota Pembelajaran</a><a href="kuiz.html">Kuiz Interaktif</a><a href="tips.html">Tips & Fakta</a><a class="btn" href="model.html">Mula Belajar →</a></div></nav><main><section class="hero wrap"><div class="heroText fade"><div class="eyebrow">Selamat Datang ke WOODVERSE</div><h1>KUASAI SENI <span>TANGGAM KAYU</span> MELALUI SIMULASI 3D</h1><p>Pengalaman pembelajaran interaktif yang menggabungkan teknologi simulasi 3D dengan seni pertukangan kayu tradisional.</p><a class="btn" href="model.html">Mula Belajar →</a><p class="scrollHint">⌄ Skrol untuk meneroka</p></div><div class="heroArt fade"><span class="chip c1"></span><span class="chip c2"></span><span class="chip c3"></span><img src="images/mortise.png" alt="Model tanggam kayu 3D"></div></section><section class="stats wrap fade"><div><b>7</b><span>Model 3D<br>Tanggam Kayu</span></div><div><b>4</b><span>Nota<br>Pembelajaran</span></div><div><b>3</b><span>Kuiz<br>Interaktif</span></div><div><b>100%</b><span>Pembelajaran<br>Interaktif</span></div></section><section class="section wrap why fade"><div><div class="eyebrow">Kenapa 3D?</div><h2 class="sectionTitle">Pengalaman yang Lebih Bermakna</h2><p class="lead">Simulasi 3D membolehkan pelajar melihat, memutar dan memahami struktur tanggam kayu dengan lebih jelas sebelum menjalankan aktiviti amali sebenar.</p></div><div class="featureGrid"><article class="feature"><i>👁️</i><b>Visual Lebih Jelas</b><span>Lihat struktur tanggam dengan lebih terperinci.</span></article><article class="feature"><i>🔄</i><b>Putar & Perhatikan</b><span>Terokai model dari pelbagai sudut.</span></article><article class="feature"><i>🧩</i><b>Fahami Struktur</b><span>Kenal pasti bahagian dan fungsi sambungan.</span></article><article class="feature"><i>🎓</i><b>Belajar Interaktif</b><span>Pembelajaran lebih mudah dan menarik.</span></article></div></section><section class="wrap fade"><div class="stripTitle">7 Model Tanggam Kayu</div><div class="modelStrip" id="modelStrip"></div></section><section class="wrap fade"><div class="ready"><div><h2>Sedia untuk memulakan perjalanan anda?</h2><p>Terokai, pelajari dan kuasai seni tanggam kayu melalui pengalaman 3D yang menarik.</p></div><a class="btn cta light" href="model.html">Mula Sekarang →</a></div></section></main><footer class="footer"><div class="footerInner"><a class="brand" href="index.html"><span class="logoBox">🪵</span><div><b>WOODVERSE</b><small>E-Modul Simulasi 3D Tanggam Kayu</small></div></a><span>Fakulti Teknikal dan Vokasional, Universiti Pendidikan Sultan Idris</span><span>© 2026 WOODVERSE. Hak Cipta Terpelihara.</span></div></footer><script src="js/main.js"></script></body></html>
+<!doctype html>
+<html lang="ms">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WOODVERSE | E-Modul Simulasi 3D Tanggam Kayu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="WOODVERSE utama">
+      <span class="brand-mark">▰</span>
+      <span><strong>WOODVERSE</strong><small>E-Modul Simulasi 3D Tanggam Kayu</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a class="active" href="index.html">Utama</a>
+      <a href="model.html">Model 3D</a>
+      <a href="nota.html">Nota Pembelajaran</a>
+      <a href="kuiz.html">Kuiz Interaktif</a>
+      <a href="tips.html">Tips & Fakta</a>
+    </nav>
+    <button class="menu-toggle" aria-label="Buka menu" onclick="toggleMenu()">☰</button>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">Selamat datang ke WOODVERSE</p>
+        <h1>Kuasai Seni <span>Tanggam Kayu</span> Melalui Simulasi 3D</h1>
+        <p class="hero-text">Pengalaman pembelajaran interaktif yang menggabungkan teknologi simulasi 3D dengan seni pertukangan kayu tradisional.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="model.html">Mula Belajar <span>→</span></a>
+          <a class="btn ghost" href="#model-preview">Teroka Model</a>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="wood-orbit"></div>
+        <img src="images/mortise.png" alt="Model tanggam kayu 3D" class="hero-img">
+        <span class="chip chip-one">Putar 360°</span>
+        <span class="chip chip-two">Step 1–4</span>
+      </div>
+    </section>
+
+    <section class="stats reveal">
+      <div><strong>7</strong><span>Model 3D<br>Tanggam Kayu</span></div>
+      <div><strong>4</strong><span>Nota<br>Pembelajaran</span></div>
+      <div><strong>3</strong><span>Kuiz<br>Interaktif</span></div>
+      <div><strong>100%</strong><span>Pembelajaran<br>Interaktif</span></div>
+    </section>
+
+    <section class="section-pad split-section reveal">
+      <div>
+        <p class="eyebrow">Kenapa 3D?</p>
+        <h2>Pengalaman yang Lebih Bermakna</h2>
+        <p>Simulasi 3D membolehkan pelajar melihat, memutar dan memahami struktur tanggam dengan lebih jelas sebelum menjalankan aktiviti amali sebenar di bengkel.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><span>👁️</span><h3>Visual Lebih Jelas</h3><p>Lihat bentuk dan struktur tanggam dari pelbagai sudut.</p></article>
+        <article class="feature-card"><span>↻</span><h3>Putar & Perhatikan</h3><p>Teroka model secara interaktif melalui putaran 360°.</p></article>
+        <article class="feature-card"><span>🧩</span><h3>Fahami Struktur</h3><p>Kenal pasti bahagian, fungsi dan proses pemasangan.</p></article>
+        <article class="feature-card"><span>🎓</span><h3>Belajar Interaktif</h3><p>Gabungan model, nota, kuiz serta tips dalam satu platform.</p></article>
+      </div>
+    </section>
+
+    <section class="section-pad" id="model-preview">
+      <div class="section-head reveal">
+        <p class="eyebrow">7 Model Tanggam Kayu</p>
+        <h2>Teroka Setiap Sambungan</h2>
+      </div>
+      <div class="model-strip reveal">
+        <a class="model-card" href="model.html?model=mortise"><small>01</small><img src="images/mortise.png" alt="Mortise and Tenon"><strong>Mortise & Tenon</strong></a>
+        <a class="model-card" href="model.html?model=dovetail"><small>02</small><img src="images/dovetail.png" alt="Dovetail"><strong>Dovetail Joint</strong></a>
+        <a class="model-card" href="model.html?model=box"><small>03</small><img src="images/box.png" alt="Box"><strong>Box Joint</strong></a>
+        <a class="model-card" href="model.html?model=lap"><small>04</small><img src="images/lap.png" alt="Lap"><strong>Lap Joint</strong></a>
+        <a class="model-card" href="model.html?model=finger"><small>05</small><img src="images/tounge.png" alt="Finger"><strong>Finger Joint</strong></a>
+        <a class="model-card" href="model.html?model=miter"><small>06</small><img src="images/miter.png" alt="Mitre"><strong>Mitre Joint</strong></a>
+        <a class="model-card" href="model.html?model=cross"><small>07</small><img src="images/cross.png" alt="Three-way cross"><strong>Three-Way Cross</strong></a>
+      </div>
+    </section>
+
+    <section class="cta-banner reveal">
+      <div>
+        <h2>Sedia untuk memulakan perjalanan anda?</h2>
+        <p>Terokai, pelajari dan kuasai seni tanggam kayu melalui pengalaman 3D yang imersif.</p>
+      </div>
+      <a class="btn light" href="model.html">Mula Sekarang →</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><strong>WOODVERSE</strong><p>E-Modul Simulasi 3D Tanggam Kayu</p></div>
+    <p>Fakulti Teknikal & Vokasional<br>Universiti Pendidikan Sultan Idris</p>
+    <p>© 2026 WOODVERSE. Hak cipta terpelihara.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
